@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>TASK LIST</h2>
+
+    <a href="/add">+ ADD NEW TASK</a>
+    <br><br>
+
+    <ul>
+      <% tasks.forEach(task=> { %>
+        <li>
+          <strong>
+            <%= task.title %>
+          </strong><br>
+          <%= task.description %><br><br>
+            <a href="/edit/<%= task.id %>">EDIT</a>
+            <a href="/delete/<%= task.id %>">DELETE</a>
+        </li>
+        <% }) %>
+    </ul>
+  </div>
+
+</body>
+
+</html>

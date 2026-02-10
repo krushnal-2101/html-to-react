@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT TASK</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>EDIT TASK</h2>
+        
+        <form action="/update/<%= task.id %>" method="POST">
+            <input type="text" name="title" value="<%= task.title %>" required />
+            <br><br>    
+            <textarea name="description" required>
+            <%= task.description %>
+        </textarea>
+
+        <br><br>
+            <button type="submit" class="btn">UPDATE TASK</button>
+        </form>
+<br><br>
+        <a href="/">BACK</a>
+    </div>
+
+</body>
+
+</html>

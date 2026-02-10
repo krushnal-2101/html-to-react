@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(105, 44, 44);
+  color: rgb(233, 185, 185);
+  
+}
+
+a{
+  text-decoration: none;
+    color: rgb(152, 219, 172);
+    padding: 20px;
+   
+}
+
+.container{
+  width: 1320px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+ul{
+  list-style: none;
+}
+h2{
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+li{
+  margin-bottom: 20px;
+}
+
+.btn{
+  border: 1px solid red;
+  padding: 5px;
+  background-color: brown;
+  color: aliceblue;
+}
